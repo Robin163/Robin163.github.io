@@ -64,7 +64,7 @@
   <div class="post-content" itemprop="articleBody">
     <h1 id="self-startup-command-lineor-cli-in-windows">self-startup command line(or CLI) in windows</h1>
 
-<p><a href="https://robin163.github.io/cmd/update/2018/09/06/start-cn.html">Chinese-Version</a></p>
+<p><a href="https://robin163.github.io/cmd/2018/09/06/start-cn.html">Chinese</a></p>
 
 <!-- vim-markdown-toc GFM -->
 
@@ -81,29 +81,9 @@
 
 <h2 id="1-created-the-self-start-file">1. Created the self-start file</h2>
 <p>create a new file .txt, input source code inside:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#include &lt;stdlib.h&gt;</span>
-<span class="c1">#include "hello.h"</span>
-
-<span class="sr">/**
- * @name   main.c
- * @param  argc
- * @param  argv
- * @retval zero.
- * @brief  main program.
- *
- */</span>
-<span class="n">int</span>
-<span class="n">main</span> <span class="p">(</span> <span class="n">int</span> <span class="n">argc</span><span class="p">,</span> <span class="n">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[]</span> <span class="p">)</span> <span class="p">{</span>
-    <span class="n">hello</span><span class="p">();</span>
-    <span class="nb">printf</span> <span class="p">(</span> <span class="s2">"this is main function!</span><span class="se">\n\r</span><span class="s2">"</span> <span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="vi">@echo</span> <span class="n">off</span>
-<span class="no">CMD</span>
-<span class="c1">#define ccc 12</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@echo</span> <span class="n">off</span>
+<span class="no">CMD</span></code></pre></figure>
 
 <p>then change the file name to “start.bat”</p>
 <h2 id="2-find-up-the-correct-positon">2. find up the correct positon</h2>

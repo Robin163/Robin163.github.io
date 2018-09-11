@@ -6,15 +6,15 @@
 </description>
     <link>http://robin163.com/</link>
     <atom:link href="http://robin163.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Sep 2018 10:51:07 +0800</pubDate>
-    <lastBuildDate>Tue, 11 Sep 2018 10:51:07 +0800</lastBuildDate>
+    <pubDate>Tue, 11 Sep 2018 11:07:01 +0800</pubDate>
+    <lastBuildDate>Tue, 11 Sep 2018 11:07:01 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>start cmd english version</title>
         <description>&lt;h1 id=&quot;self-startup-command-lineor-cli-in-windows&quot;&gt;self-startup command line(or CLI) in windows&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://robin163.github.io/cmd/update/2018/09/06/start-cn.html&quot;&gt;Chinese-Version&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://robin163.github.io/cmd/2018/09/06/start-cn.html&quot;&gt;Chinese&lt;/a&gt;&lt;/p&gt;
 
 &lt;!-- vim-markdown-toc GFM --&gt;
 
@@ -31,29 +31,9 @@
 
 &lt;h2 id=&quot;1-created-the-self-start-file&quot;&gt;1. Created the self-start file&lt;/h2&gt;
 &lt;p&gt;create a new file .txt, input source code inside:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#include &amp;lt;stdlib.h&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#include &quot;hello.h&quot;&lt;/span&gt;
-
-&lt;span class=&quot;sr&quot;&gt;/**
- * @name   main.c
- * @param  argc
- * @param  argv
- * @retval zero.
- * @brief  main program.
- *
- */&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;int&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;argc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;this is main function!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\r&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;vi&quot;&gt;@echo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;off&lt;/span&gt;
-&lt;span class=&quot;no&quot;&gt;CMD&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#define ccc 12&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@echo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;off&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;CMD&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;then change the file name to “start.bat”&lt;/p&gt;
 &lt;h2 id=&quot;2-find-up-the-correct-positon&quot;&gt;2. find up the correct positon&lt;/h2&gt;
@@ -84,7 +64,7 @@
         <title>start cmd chinese version</title>
         <description>&lt;h1 id=&quot;windows-中开机自启动命令行cli&quot;&gt;windows 中开机自启动命令行(CLI)&lt;/h1&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://robin163.github.io/cmd/update/2018/09/06/start-en.html&quot;&gt;English&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://robin163.github.io/cmd/2018/09/06/start-en.html&quot;&gt;English&lt;/a&gt;&lt;/p&gt;
 
 &lt;!-- vim-markdown-toc GFM --&gt;
 
@@ -101,9 +81,10 @@
 
 &lt;h2 id=&quot;1-创建自启动批处理文件&quot;&gt;1. 创建自启动批处理文件&lt;/h2&gt;
 &lt;p&gt;新建一个.txt文档，在里面输入代码&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@echo off
-CMD
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@echo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;off&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;CMD&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;p&gt;然后把文件更名为start.bat&lt;/p&gt;
 &lt;h2 id=&quot;2-找出自启动位置&quot;&gt;2. 找出自启动位置&lt;/h2&gt;
 &lt;p&gt;按快捷键 “win+R” 调用运行窗口,&lt;/p&gt;
