@@ -4,10 +4,10 @@
     <title>Robin blog</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://robin163.com/</link>
-    <atom:link href="http://robin163.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Sep 2018 10:48:23 +0800</pubDate>
-    <lastBuildDate>Mon, 17 Sep 2018 10:48:23 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 17 Sep 2018 10:50:20 +0800</pubDate>
+    <lastBuildDate>Mon, 17 Sep 2018 10:50:20 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -97,8 +97,8 @@
 
 </description>
         <pubDate>Sat, 15 Sep 2018 11:48:42 +0800</pubDate>
-        <link>http://robin163.com/cmd/2018/09/15/start-app.html</link>
-        <guid isPermaLink="true">http://robin163.com/cmd/2018/09/15/start-app.html</guid>
+        <link>http://localhost:4000/cmd/2018/09/15/start-app.html</link>
+        <guid isPermaLink="true">http://localhost:4000/cmd/2018/09/15/start-app.html</guid>
         
         
         <category>cmd</category>
@@ -123,8 +123,8 @@
 
 </description>
         <pubDate>Fri, 14 Sep 2018 11:48:41 +0800</pubDate>
-        <link>http://robin163.com/cmd/2018/09/14/welcome.html</link>
-        <guid isPermaLink="true">http://robin163.com/cmd/2018/09/14/welcome.html</guid>
+        <link>http://localhost:4000/cmd/2018/09/14/welcome.html</link>
+        <guid isPermaLink="true">http://localhost:4000/cmd/2018/09/14/welcome.html</guid>
         
         
         <category>cmd</category>
@@ -173,8 +173,8 @@
 
 </description>
         <pubDate>Wed, 12 Sep 2018 11:48:42 +0800</pubDate>
-        <link>http://robin163.com/cmd/2018/09/12/start-en.html</link>
-        <guid isPermaLink="true">http://robin163.com/cmd/2018/09/12/start-en.html</guid>
+        <link>http://localhost:4000/cmd/2018/09/12/start-en.html</link>
+        <guid isPermaLink="true">http://localhost:4000/cmd/2018/09/12/start-en.html</guid>
         
         
         <category>cmd</category>
@@ -221,8 +221,8 @@
 
 </description>
         <pubDate>Thu, 06 Sep 2018 11:48:42 +0800</pubDate>
-        <link>http://robin163.com/cmd/2018/09/06/start-cn.html</link>
-        <guid isPermaLink="true">http://robin163.com/cmd/2018/09/06/start-cn.html</guid>
+        <link>http://localhost:4000/cmd/2018/09/06/start-cn.html</link>
+        <guid isPermaLink="true">http://localhost:4000/cmd/2018/09/06/start-cn.html</guid>
         
         
         <category>cmd</category>
