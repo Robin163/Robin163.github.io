@@ -6,9 +6,76 @@
 </description>
     <link>http://robin163.com/</link>
     <atom:link href="http://robin163.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Sep 2018 16:23:05 +0800</pubDate>
-    <lastBuildDate>Fri, 14 Sep 2018 16:23:05 +0800</lastBuildDate>
+    <pubDate>Mon, 17 Sep 2018 09:30:52 +0800</pubDate>
+    <lastBuildDate>Mon, 17 Sep 2018 09:30:52 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>start app chinese version</title>
+        <description>&lt;h1 id=&quot;windows命令行中-启动应用程序&quot;&gt;windows命令行中 启动应用程序&lt;/h1&gt;
+&lt;p&gt;##目的：
+在windows的命令行界面中，输入简单的几个字符就可以启动相应的应用程序。&lt;/p&gt;
+
+&lt;p&gt;例如： 输入mail，E-mail就自行启动，十分方便。以后就不用在电脑桌面上放那么多菜：）&lt;/p&gt;
+
+&lt;p&gt;增强功能里包含：对开启的应用程序进行简单配置，然后通过命令可以对其操作。
+##效果
+&lt;img src=&quot;https://github.com/Robin163/robin163.github.io/blob/master/css/mail.JPG?raw=true&quot; alt=&quot;mail&quot; title=&quot;backgroud&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;##方法
+以E-mail为例子来说明具体的实现方法
+###1. 创建批处理脚本
+创建路径C:\other\shell(根据自己爱好创建存放脚本的路径)&lt;/p&gt;
+
+&lt;p&gt;在此路径下新建一个文本文件，如mail.txt&lt;/p&gt;
+
+&lt;p&gt;在此文件中写入下面的代码&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@echo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;off&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Start&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;APP&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mail&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;dummyclient&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;C:/Program Files (x86)/Microsoft Office/Office14/OUTLOOK.exe&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;successfully&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;App&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;此处的outlook路径要更该成你的！&lt;/p&gt;
+
+&lt;p&gt;保存文件，并把文件名更改为mail.cmd
+###2. 设定环境变量
+首先右键点击桌面上 “我的电脑” -»“属性”-»“高级系统设置”-»“环境变量”-»“系统变量”&lt;/p&gt;
+
+&lt;p&gt;然后双击变量“”路径”，把C:\other\shell加入其中
+###3. 测试功能
+首先打开命令行cmd，快捷键”win+R” 输入”cmd” 按Enter键&lt;/p&gt;
+
+&lt;p&gt;然后在命令行中输入”mail”&lt;/p&gt;
+
+&lt;p&gt;E-mail 就会自行启动&lt;/p&gt;
+
+&lt;p&gt;特别注意：&lt;/p&gt;
+
+&lt;p&gt;a. 文件名是和命令相关的。上面的文件名是mail.cmd, 命令名就是mail&lt;/p&gt;
+
+&lt;p&gt;b. 文件取名长度最好2-4个字符，字符太长不方便输入
+###4. 扩展功能
+按照方法中的1-3,我们同样可以启动其他应用程序，&lt;/p&gt;
+
+&lt;p&gt;只要新建一个文档gvim.cmd, 程序更改为：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;vi&quot;&gt;@echo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;off&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Start&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;APP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gvim&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;dummyclient&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;D:/program/vim/vim80/gvim.exe&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;successfully&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;App&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;在命令行中输入gvim，应用程序gvim就会自行启动&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 15 Sep 2018 11:48:42 +0800</pubDate>
+        <link>http://robin163.com/cmd/2018/09/15/start-app.html</link>
+        <guid isPermaLink="true">http://robin163.com/cmd/2018/09/15/start-app.html</guid>
+        
+        
+        <category>cmd</category>
+        
+      </item>
     
       <item>
         <title>Welcome to commond line interface!</title>
@@ -77,9 +144,9 @@
 &lt;p&gt;then you will get the result&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 06 Sep 2018 11:48:42 +0800</pubDate>
-        <link>http://robin163.com/cmd/2018/09/06/start-en.html</link>
-        <guid isPermaLink="true">http://robin163.com/cmd/2018/09/06/start-en.html</guid>
+        <pubDate>Wed, 12 Sep 2018 11:48:42 +0800</pubDate>
+        <link>http://robin163.com/cmd/2018/09/12/start-en.html</link>
+        <guid isPermaLink="true">http://robin163.com/cmd/2018/09/12/start-en.html</guid>
         
         
         <category>cmd</category>

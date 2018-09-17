@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Robin blog</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>start app chinese version</title>
+  <meta name="description" content="windows命令行中 启动应用程序##目的：在windows的命令行界面中，输入简单的几个字符就可以启动相应的应用程序。">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://robin163.com/">
+  <link rel="canonical" href="http://robin163.com/cmd/2018/09/15/start-app.html">
   <link rel="alternate" type="application/rss+xml" title="Robin blog" href="http://robin163.com/feed.xml">
 </head>
 
@@ -55,49 +54,73 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">start app chinese version</h1>
+    <p class="post-meta"><time datetime="2018-09-15T11:48:42+08:00" itemprop="datePublished">Sep 15, 2018</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Sep 15, 2018</span>
+  <div class="post-content" itemprop="articleBody">
+    <h1 id="windows命令行中-启动应用程序">windows命令行中 启动应用程序</h1>
+<p>##目的：
+在windows的命令行界面中，输入简单的几个字符就可以启动相应的应用程序。</p>
 
-        <h2>
-          <a class="post-link" href="/cmd/2018/09/15/start-app.html">start app chinese version</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 14, 2018</span>
+<p>例如： 输入mail，E-mail就自行启动，十分方便。以后就不用在电脑桌面上放那么多菜：）</p>
 
-        <h2>
-          <a class="post-link" href="/cmd/2018/09/14/welcome.html">Welcome to commond line interface!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 12, 2018</span>
+<p>增强功能里包含：对开启的应用程序进行简单配置，然后通过命令可以对其操作。
+##效果
+<img src="https://github.com/Robin163/robin163.github.io/blob/master/css/mail.JPG?raw=true" alt="mail" title="backgroud" /></p>
 
-        <h2>
-          <a class="post-link" href="/cmd/2018/09/12/start-en.html">start cmd english version</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 6, 2018</span>
+<p>##方法
+以E-mail为例子来说明具体的实现方法
+###1. 创建批处理脚本
+创建路径C:\other\shell(根据自己爱好创建存放脚本的路径)</p>
 
-        <h2>
-          <a class="post-link" href="/cmd/2018/09/06/start-cn.html">start cmd chinese version</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>在此路径下新建一个文本文件，如mail.txt</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p>在此文件中写入下面的代码</p>
 
-</div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@echo</span> <span class="n">off</span>
+<span class="n">echo</span> <span class="no">Start</span> <span class="no">APP</span> <span class="no">E</span><span class="o">-</span><span class="n">mail</span>
+<span class="n">start</span> <span class="s2">"dummyclient"</span> <span class="s2">"C:/Program Files (x86)/Microsoft Office/Office14/OUTLOOK.exe"</span>
+<span class="n">echo</span> <span class="n">successfully</span> <span class="nb">open</span> <span class="n">the</span> <span class="no">App</span></code></pre></figure>
+
+<p>此处的outlook路径要更该成你的！</p>
+
+<p>保存文件，并把文件名更改为mail.cmd
+###2. 设定环境变量
+首先右键点击桌面上 “我的电脑” -»“属性”-»“高级系统设置”-»“环境变量”-»“系统变量”</p>
+
+<p>然后双击变量“”路径”，把C:\other\shell加入其中
+###3. 测试功能
+首先打开命令行cmd，快捷键”win+R” 输入”cmd” 按Enter键</p>
+
+<p>然后在命令行中输入”mail”</p>
+
+<p>E-mail 就会自行启动</p>
+
+<p>特别注意：</p>
+
+<p>a. 文件名是和命令相关的。上面的文件名是mail.cmd, 命令名就是mail</p>
+
+<p>b. 文件取名长度最好2-4个字符，字符太长不方便输入
+###4. 扩展功能
+按照方法中的1-3,我们同样可以启动其他应用程序，</p>
+
+<p>只要新建一个文档gvim.cmd, 程序更改为：</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="vi">@echo</span> <span class="n">off</span>
+<span class="n">echo</span> <span class="no">Start</span> <span class="no">APP</span> <span class="n">gvim</span>
+<span class="n">start</span> <span class="s2">"dummyclient"</span> <span class="s2">"D:/program/vim/vim80/gvim.exe"</span>
+<span class="n">echo</span> <span class="n">successfully</span> <span class="nb">open</span> <span class="n">the</span> <span class="no">App</span></code></pre></figure>
+
+<p>在命令行中输入gvim，应用程序gvim就会自行启动</p>
+
+
+  </div>
+
+</article>
 
       </div>
     </div>
