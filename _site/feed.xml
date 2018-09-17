@@ -6,13 +6,30 @@
 </description>
     <link>http://robin163.com/</link>
     <atom:link href="http://robin163.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Sep 2018 09:37:03 +0800</pubDate>
-    <lastBuildDate>Mon, 17 Sep 2018 09:37:03 +0800</lastBuildDate>
+    <pubDate>Mon, 17 Sep 2018 09:40:01 +0800</pubDate>
+    <lastBuildDate>Mon, 17 Sep 2018 09:40:01 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
         <title>start app chinese version</title>
         <description>&lt;h1 id=&quot;windows命令行中-启动应用程序&quot;&gt;windows命令行中 启动应用程序&lt;/h1&gt;
+
+&lt;!-- vim-markdown-toc GFM --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#目的&quot;&gt;目的：&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#效果&quot;&gt;效果&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#方法&quot;&gt;方法&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-创建批处理脚本&quot;&gt;1. 创建批处理脚本&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-设定环境变量&quot;&gt;2. 设定环境变量&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#3-测试功能&quot;&gt;3. 测试功能&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#4-扩展功能&quot;&gt;4. 扩展功能&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- vim-markdown-toc --&gt;
 
 &lt;p&gt;##目的：&lt;/p&gt;
 
