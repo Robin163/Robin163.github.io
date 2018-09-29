@@ -5,7 +5,6 @@ if [ -n "$msg" ]; then
 	git add -A
 	git commit -m"${msg}"
 	git pull
-	git push
 	git status
 	echo "完成add、commit、pull，别忘了push"
 else
