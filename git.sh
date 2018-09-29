@@ -6,7 +6,9 @@ if [ -n "$msg" ]; then
 	git commit -m"${msg}"
 	git pull
 	git status
-	echo "完成add、commit、pull，别忘了push"
+	git push
+	echo "finished add、commit、pull !"
+	echo "when push, please input name and password"
 else
-	echo "请添加注释再来一遍"
+	echo "input again, for no comment !"
 fi
