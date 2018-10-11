@@ -4,6 +4,9 @@ title:  "精彩网站分享"
 date:   2018-09-18 17:48:42 +0800
 categories: cmd
 ---
+# windows
+[Windows下效率必备软件](https://www.jeffjade.com/2015/10/19/2015-10-18-Efficacious-win-software/)
+
 # gvim
 [gvim及插件 官网下载](https://www.vim.org/)
 
