@@ -32,6 +32,7 @@ categories: cmd
 
 首先下载源码，在linux下编译成功后再copy 到相应的目录里， 具体操作如下：
 
+{% highlight ruby %}
 #install vimium
 
 sudo apt-get install npm
@@ -63,6 +64,7 @@ Enter "about:debugging" in the URL bar
 Click "Load Temporary Add-on"
 
 Open the Vimium directory and select any file inside.
+{% endhighlight %}
 
 
 [**HomePage**](https://robin163.github.io/)
