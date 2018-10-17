@@ -76,6 +76,14 @@ windows下安装vim有点麻烦，不过只要安装成功你就不会后悔，
 
 [gvim安装和应用](https://github.com/Robin163/robin163.github.io/raw/master/css/install_vim.cmd )
 
+注意：
+
+1. 安装路径不能有空格和特殊符号
+
+2. phthon，LLVM，Cmake要和windows的位数一致（32bits还是64bits）
+
+3. phthon，LLVM，Cmake要和vim版本兼容。在vim中，输入“”：version“”就可以显示相关信息
+
 
 
 [**HomePage**](https://robin163.github.io/)
