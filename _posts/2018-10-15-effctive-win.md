@@ -72,7 +72,10 @@ windows下安装vim有点麻烦，不过只要安装成功你就不会后悔，
 
 让键盘在指尖跳动，让你的编程柔顺丝滑，从此欲罢不能！
 
-详细的gvim安装和应用见： [gvim安装和应用]
+详细的gvim安装和应用见：
+
+[gvim安装和应用](https://github.com/Robin163/robin163.github.io/raw/master/css/install_vim.cmd )
+
 
 
 [**HomePage**](https://robin163.github.io/)
