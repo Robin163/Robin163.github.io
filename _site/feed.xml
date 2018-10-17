@@ -6,8 +6,8 @@
 </description>
     <link>https://robin163.github.io//</link>
     <atom:link href="https://robin163.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 16 Oct 2018 08:56:30 +0800</pubDate>
-    <lastBuildDate>Tue, 16 Oct 2018 08:56:30 +0800</lastBuildDate>
+    <pubDate>Wed, 17 Oct 2018 11:28:51 +0800</pubDate>
+    <lastBuildDate>Wed, 17 Oct 2018 11:28:51 +0800</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -71,6 +71,14 @@
 &lt;span class=&quot;no&quot;&gt;Click&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Load Temporary Add-on&quot;&lt;/span&gt;
 
 &lt;span class=&quot;no&quot;&gt;Open&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Vimium&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;directory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;select&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;any&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inside&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.vim.org/&quot;&gt;gvim&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;windows下安装vim有点麻烦，不过只要安装成功你就不会后悔，&lt;/p&gt;
+
+&lt;p&gt;让键盘在指尖跳动，让你的编程柔顺丝滑，从此欲罢不能！&lt;/p&gt;
+
+&lt;p&gt;详细的gvim安装和应用见： [gvim安装和应用]&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://robin163.github.io/&quot;&gt;&lt;strong&gt;HomePage&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
