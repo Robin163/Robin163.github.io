@@ -1,0 +1,162 @@
+#!/bin/sh
+# get the authority
+# 1.open BIOS and setting virtual techonoligy open
+# intall VirtualBox:
+# 1.download VirtualBox in the https://www.virtualbox.org
+# 2.continue next step to instll utill finish it
+# config VirtualBox:
+# 1.hotkey 'ctrl+G' ,disply preferences window
+# 2.in general setting machine fold : D:\Vbpc  then press ok!
+# 3.new PC create: robin linux ubuntu(64-bits)
+# 4.setting memory is 1/2(2048M) host memory
+# 5.create a virtual hard disk now
+# 6.choice VDI
+# 7.dynamically allocated
+# 8.press next
+# install ubuntu:
+# 1.download from https://www.ubuntu.com/download/desktop
+# 2.continue press next is ok
+#install extension package
+# 1. should run in guest PC
+
+##change default color of terminal
+##Edit->preferences->custom Font 'MonoSpace Regular 14'
+##colors: background is solarized and palette is solarized
+
+##update and upgrade linux
+#sudo apt-get update
+#sudo apt-get upgrade
+
+##add shared file mode to user Robin
+#whoami
+##:robin
+#cat /etc/group | grep vbox
+##:vboxsf:x:999:robin
+#sudo usermod -a -G vboxsf robin
+
+
+#copy config file from shared path
+#cp -r /media/sf_other/conf_ubt ./
+#if want to execute the file
+#chmod +x conf_ubt
+#./conf_ubt
+
+#sudo apt-get install ack ctags wmctrl vim vim-gnome guake
+##dos and unix format switch
+#sudo apt-get install dos2unix
+##astyle
+#sudo apt-get install astyle
+
+##install git and vundle
+#sudo apt-get install git-core
+#cp -r /media/sf_other/.vim ./
+#cp -r /media/sf_other/shell ./
+
+##install youcompleteMe
+#sudo apt-get install minicom
+#sudo apt install build-essential cmake python3-dev
+##install vim plugin
+#put .vimrc into /home/robin
+#cd ~/.vim/bundle
+#git clone https://github.com/Valloric/YouCompleteMe.git
+#cd ~/.vim/bundle/YouCompleteMe
+#git submodule update --init --recursive
+#python3 install.py --clang-completer
+
+#config guake terminal
+#preference->appearance->font:Monospace 14 & schemes:Monokai
+#guake open when pc start
+#startup application->add /usr/bin/guake
+
+##install gcc-arm none-eabi
+##(should NOT install apt-get for not the latest one, for printf not working)
+#sudo apt-get install lsb-core
+#sudo cp -r /media/sf_other/gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 ./library
+#cd library/ ;
+#tar -jxvf ../gcc-arm-none-eabi-5_4-2016q3-20160926-linux.tar.bz2 ./
+##add path to /etc/profile
+#export PATH=$PATH:/home/robin/library/gcc-arm-none-eabi-5_4-2016q3/bin
+#source /etc/profile
+##check install success
+#arm-none-eabi-gcc -v
+
+#install libusb
+#first way
+#sudo apt-cache search libusb
+#sudo apt-get install libusb-1.0-x
+#second way
+#sudo cp -r /media/sf_other/libusb-1.0.22.tar.bz2 ./library
+#tar -jxvf libusb-1.0.22.tar.bz2
+#cd library/libusb-1.0.22
+#./configure
+#make
+#sudo make install
+
+#install openocd
+#first way
+#sudo apt-cache search openocd
+#sudo apt-get install openocd libusb++-dev
+#second way
+#sudo cp -r /media/sf_other/openocd-0.10.0.zip ./library
+#unzip openocd-0.10.0.zip
+#cd library/openocd-0.10.0
+#./configure
+#make
+#sudo make install
+
+#======================================================
+#need check these related App
+#sudo apt-get install lib32ncurses5 lib32tinfo5 libc6-i386
+#sudo apt-get install build-essential pkg-config autoconf automake libtool libusb-dev libusb-1.0-0-dev libhidapi-dev
+#sudo apt-get install libtool libsysfs-dev
+#======================================================
+
+##setting language
+#Setting ->> Region&Language ->>Manage Installed Language
+#->>Keyboard input Method system:fcitx
+##install fcitx
+#sudo apt-get install fcitx-table-wbpy
+#sudo apt-get update
+#sudo apt-get upgrade
+##restart PC
+#config input
+#configure input Method only keep 2 ways: English and Pinyin
+
+## handle images
+#sudo apt-get install shutter
+
+##handle website
+#sudo apt-get install ruby
+#sudo gem install jekyll
+#sudo apt-get install python-pip
+#pip install pyments
+
+#install yahei_consolas_hybird in gvim
+
+## install gif make
+#sudo add-apt-repository ppa:djcj/hybrid
+#sudo apt-get update
+#sudo apt-get install ffmpeg
+
+## install gif make
+#sudo add-apt-repository ppa:peek-developers/stable
+#sudo apt update
+#sudo apt install peek
+
+##install vimium
+#sudo apt-get install npm
+#sudo npm install --global coffeescript
+#sudo npm install --global coffeescript@1.12.7
+#cd vimium
+#cake build
+##Chrome/Chromium
+##Navigate to chrome://extensions
+##Toggle into Developer Mode
+##Click on "Load Unpacked Extension..."
+##Select the Vimium directory.
+##Firefox
+##Open Firefox
+##Enter "about:debugging" in the URL bar
+##Click "Load Temporary Add-on"
+##Open the Vimium directory and select any file inside.
+
