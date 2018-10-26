@@ -36,7 +36,7 @@ chmod +x conf_ubt
 ./conf_ubt
 {% endhighlight %}
 
-#安装vim，git，guake...
+# 安装vim，git，guake...
 
 {% highlight ruby %}
 sudo apt-get install ack ctags wmctrl vim vim-gnome guake
@@ -54,7 +54,7 @@ cp -r /media/sf_other/.vim ./
 cp -r /media/sf_other/shell ./
 {% endhighlight %}
 
-#安装YoucompleteMe
+# 安装YoucompleteMe
 
 {% highlight ruby %}
 #install youcompleteMe
@@ -68,7 +68,7 @@ git submodule update --init --recursive
 python3 install.py --clang-completer
 {% endhighlight %}
 
-#配置guake
+# 配置guake
 
 {% highlight ruby %}
 #config guake terminal
@@ -77,7 +77,7 @@ python3 install.py --clang-completer
 #startup application->add /usr/bin/guake
 {% endhighlight %}
 
-#安装gcc-arm-none-eabi
+# 安装gcc-arm-none-eabi
 
 {% highlight ruby %}
 #install gcc-arm none-eabi
@@ -94,7 +94,7 @@ arm-none-eabi-gcc -v
 {% endhighlight %}
 
 
-#安装libusb
+# 安装libusb
 
 {% highlight ruby %}
 #install libusb
@@ -111,7 +111,7 @@ sudo make install
 {% endhighlight %}
 
 
-#安装openocd
+# 安装openocd
 
 {% highlight ruby %}
 #install openocd
@@ -127,57 +127,57 @@ make
 sudo make install
 {% endhighlight %}
 
-#配置中文输入法
+# 配置中文输入法
 {% highlight ruby %}
-##setting language
-#Setting ->> Region&Language ->>Manage Installed Language
-#->>Keyboard input Method system:fcitx
-##install fcitx
-#sudo apt-get install fcitx-table-wbpy
-#sudo apt-get update
-#sudo apt-get upgrade
-##restart PC
-#config input
-#configure input Method only keep 2 ways: English and Pinyin
+#setting language
+Setting ->> Region&Language ->>Manage Installed Language
+->>Keyboard input Method system:fcitx
+#install fcitx
+sudo apt-get install fcitx-table-wbpy
+sudo apt-get update
+sudo apt-get upgrade
+#restart PC
+config input
+configure input Method only keep 2 ways: English and Pinyin
 {% endhighlight %}
 
-#截图工具
+# 截图工具
 
 {% highlight ruby %}
-## handle images
-#sudo apt-get install shutter
-
-#vim中写博客
-
-{% highlight ruby %}
-##handle website
-#sudo apt-get install ruby
-#sudo gem install jekyll
-#sudo apt-get install python-pip
-#pip install pyments
+# handle images
+sudo apt-get install shutter
 {% endhighlight %}
 
-#配置vim中的中英文字体
+# vim中写博客
 
 {% highlight ruby %}
-#install yahei_consolas_hybird in gvim
+#handle website
+sudo apt-get install ruby
+sudo gem install jekyll
+sudo apt-get install python-pip
+pip install pyments
 {% endhighlight %}
 
-#截取动态图的工具
+# 配置vim中的中英文字体
 
 {% highlight ruby %}
-## install gif make
-#sudo add-apt-repository ppa:djcj/hybrid
-#sudo apt-get update
-#sudo apt-get install ffmpeg
-
-## install gif make
-#sudo add-apt-repository ppa:peek-developers/stable
-#sudo apt update
-#sudo apt install peek
+install yahei_consolas_hybird in gvim
 {% endhighlight %}
 
-#安装黑客级chrome插件
+# 截取动态图的工具
+
+{% highlight ruby %}
+# install gif make
+sudo add-apt-repository ppa:djcj/hybrid
+sudo apt-get update
+sudo apt-get install ffmpeg
+# install gif make
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt update
+sudo apt install peek
+{% endhighlight %}
+
+# 安装黑客级chrome插件
 
 {% highlight ruby %}
 #install vimium
