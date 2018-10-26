@@ -164,6 +164,8 @@ pip install pyments
 install yahei_consolas_hybird in gvim
 {% endhighlight %}
 
+[vimrc参考](https://github.com/Robin163/robin163.github.io/blob/master/css/.vimrc?raw=true)
+
 # 截取动态图的工具
 
 {% highlight ruby %}
